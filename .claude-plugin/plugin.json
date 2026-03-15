@@ -1,0 +1,9 @@
+{
+  "name": "xcode-cli",
+  "description": "Xcode CLI — Build, test, run, and manage Xcode projects from Claude Code.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marcel R. G. Berger",
+    "email": "hello@marcelrgberger.com"
+  }
+}

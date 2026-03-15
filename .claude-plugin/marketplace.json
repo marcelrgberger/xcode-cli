@@ -1,0 +1,21 @@
+{
+  "name": "xcode-cli",
+  "owner": {
+    "name": "Marcel R. G. Berger"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Xcode CLI for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "xcode-cli",
+      "source": "./",
+      "description": "Control Xcode from Claude — build, test, run, clean, manage simulators, schemes, and projects.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Marcel R. G. Berger"
+      }
+    }
+  ]
+}
