@@ -115,6 +115,21 @@ xcode_cli/
     __init__.py
 ```
 
+### Data Flow
+
+```mermaid
+graph LR
+    U[User / Claude] -->|/xcode command| CLI[xcode-cli]
+    CLI -->|AppleScript| X[Xcode App]
+    CLI -->|xcodebuild| B[Build System]
+    CLI -->|xcrun simctl| S[Simulators]
+    CLI -->|xcrun devicectl| D[Physical Devices]
+
+    X -->|Schemes, Destinations| CLI
+    B -->|Build Status, Errors| CLI
+    S -->|Screenshots, App Install| CLI
+```
+
 ## Backend Strategy
 
 - **Workspace queries** (schemes, destinations, active state): AppleScript via `tell application "Xcode"`
